@@ -2,13 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <link th:href="@{index.css}" rel="stylesheet">
+    <script th:src="@{index.js}"></script>
+    <script src="index.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css-s">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body id="grid-wrapper">
     <header>
         <h1>MMW WARBURG</h1>
     </header>
-    <div id="index_menu" th:insert="marktdaten.html :: menu"> </div>
-    <div th:insert="marktdaten.html :: contentbar"> </div>
+    <div id="index_menubar" th:insert="marktdaten.html :: menu"> </div>
+    <div id="index_contentbar" th:insert="marktdaten.html :: contentbar"> </div>
 </body>
 </html>
 
