@@ -7,20 +7,23 @@
 
 </head>
 <body>
-<div th:fragment="modifier">
-    <div id="modifier-bar">
-        <label>WKN</label>
-        <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
-        <label>Waerung</label>
-        <select id="cars" name="cars">
-            <option value="EUR">Volvo</option>
-            <option value="USD">Saab</option>
-            <option value="CHF">Fiat</option>
-        </select>
-        <label>Kurse von</label>
-        <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
-        <label>Kurse bis</label>
-        <input class="contentbox" name="ss" type="text" size="8" placeholder="Waerung">
+<div th:fragment="contentbar">
+    <div id="index_content">
+        <div>
+            <label>WKN</label>
+            <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
+            <label>Waerung</label>
+            <select id="cars" name="cars">
+                <option value="EUR">Volvo</option>
+                <option value="USD">Saab</option>
+                <option value="CHF">Fiat</option>
+            </select>
+            <label>Kurse von</label>
+            <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
+            <label>Kurse bis</label>
+            <input class="contentbox" name="ss" type="text" size="8" placeholder="Waerung">
+        </div>
+        <h1>rrr</h1>
     </div>
 </div>
 
