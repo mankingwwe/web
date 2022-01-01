@@ -3,6 +3,8 @@
 <head th:fragment="headerfiles">
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="index.css">
+    <link th:href="@{index.css}" rel="stylesheet">
+
 </head>
 <body>
 <div th:fragment="modifier">
@@ -31,7 +33,12 @@
                 </ul>
             </li>
             <li><a href="http://localhost:8080/bloomberg"> Bloomberg</a></li>
-            <li><a href="#Devisenvolas">Downloads</a></li>
+            <li><a href="#Anzeige Marktdaten"> Anzeige Marktdaten</a>
+                <ul>
+                    <li><a href="#Anzeige Marktdaten"> Devisen</a></li>
+                    <li><a href="#Anzeige Marktdaten"> Volas</a></li>
+                </ul>
+            </li>
             <li><a href="#GMFUT">Morningstar</a></li>
             <li><a href="#Oneshoot">Quality Checks</a></li>
             <li><a href="#home"> WP - Verarbeitung</a></li>

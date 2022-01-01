@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +5,7 @@
 
 h1{
   text-align: center;
+  margin-bottom:15px;
 
 }
 
@@ -25,7 +24,9 @@ header{
   padding-bottom: 42%;
 }
 
-
+.dropdown > li{
+  padding-left: 30px;
+}
 
 #modifier-bar{
   display: grid;
@@ -68,7 +69,6 @@ body {
 
 .dropdown {
   margin: 0;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,11 +95,11 @@ body {
 
 .dropdown li ul {
   position: absolute;
-  margin: 0;
+  margin-left: 30px;
   padding: 0;
   list-style: none;
   background-color: #444444;
-  width: 200px;
+  width: 130px;
   left: 0;
   opacity: 0;
   visibility: hidden;
