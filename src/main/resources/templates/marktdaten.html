@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="headerfiles">
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div th:fragment="modifier">
+    <div id="modifier-bar">
+        <label>WKN</label>
+        <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
+        <label>Waerung</label>
+        <select id="cars" name="cars">
+            <option value="EUR">Volvo</option>
+            <option value="USD">Saab</option>
+            <option value="CHF">Fiat</option>
+        </select>
+        <label>Kurse von</label>
+        <input class="contentbox" name="preis" type="text" size="8" placeholder="WKN/ISIN">
+        <label>Kurse bis</label>
+        <input class="contentbox" name="ss" type="text" size="8" placeholder="Waerung">
+    </div>
+</div>
+
+<div th:fragment="menu" id="menu">
+        <ul class="dropdown">
+            <li><a href="#Anzeige Marktdaten"> Anzeige Marktdaten</a>
+                <ul>
+                    <li><a href="#Anzeige Marktdaten"> Devisen</a></li>
+                    <li><a href="#Anzeige Marktdaten"> Volas</a></li>
+                </ul>
+            </li>
+            <li><a href="http://localhost:8080/bloomberg"> Bloomberg</a></li>
+            <li><a href="#Devisenvolas">Downloads</a></li>
+            <li><a href="#GMFUT">Morningstar</a></li>
+            <li><a href="#Oneshoot">Quality Checks</a></li>
+            <li><a href="#home"> WP - Verarbeitung</a></li>
+            <li><a href="#Wertpapiere"> WP - Kurserfassung</a></li>
+            <li><a href="#Devisenvolas">UBS Vol Cast</a></li>
+        </ul>
+</div>
+</body>
+</html>

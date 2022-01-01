@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+
+}
+
+body{
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+header{
+
+  padding-bottom: 5px;
+}
+
+#content{
+
+  padding-bottom: 42%;
+}
+
+
+
+#modifier-bar{
+  display: grid;
+  grid-template-columns: 6% 20% 6% 20%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  margin-top: 1%;
+  grid-auto-columns: min-content;
+  margin-left: 3%;
+}
+
+
+#index_modifier{
+  display: grid;
+  grid-template-columns: 100%
+
+}
+
+#menu{
+
+  padding-top: 5px;
+  text-align: center;
+  padding-bottom: 2%;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  background: #f2f2f2;
+}
+
+.dropdown {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  height: 50px;
+  background-color: #333333;
+}
+
+.dropdown li {
+  position: relative;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.dropdown li ul {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #444444;
+  width: 200px;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.dropdown li ul li a {
+  height: 35px;
+  line-height: 35px;
+  color: #999;
+}
+
+.dropdown li ul li a:hover {
+  background-color: rgba(23, 23, 23, 0.9);
+  color: #ffffff;
+}
+
+.dropdown li:hover>ul {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown li:hover>a {
+  background-color: #ffffff;
+  color: #222222;
+}
