@@ -14,23 +14,52 @@
 </head>
 <body>
 <div th:fragment="contentbar" id="contentbar">
-    <div style="background-color: red;">
+    <div id="contentbar-modifier" style="background-color: red;">
         <div class="container">
             <div class="row">
                 <div class='col-sm-6'>
                     <form>
-                        <div class="form-group">
+                        <div class="form-group" id="contentbar-modifier-datefields">
+                            <label for="datepicker1">Kurse von</label>
                             <div class='input-group date' id='datepicker1'>
                                 <input type='text' class="form-control"/>
                                 <span class="input-group-addon">
 		                                <span class="glyphicon glyphicon-calendar" onclick="calender()"></span>
                                     </span>
                             </div>
+                            <label for="datepicker2">Kurse bis</label>
                             <div class='input-group date' id='datepicker2'>
                                 <input type='text' class="form-control"/>
                                 <span class="input-group-addon">
 		                                <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
+                            </div>
+                            <div id="modifier_input_bar">
+                                <label for="wrg_modifier_1">Währung 1</label>
+                                <input list="wrg" name="input_normal" id="wrg_modifier_1">
+
+                                <datalist id="wrg">
+                                    <option value="texto A">
+                                    <option value="texto B">
+                                </datalist>
+                                <label for="wrg_modifier_2">Währung 2</label>
+                                <input list="wrg2" name="input_normal" id="wrg_modifier_2">
+                                <datalist id="wrg2">
+                                    <option value="texto A">
+                                    <option value="texto B">
+                                </datalist>
+                                <label for="kurstyp_modifier">Kurstyp</label>
+                                <input list="kurstyp" name="input_normal"id="kurstyp_modifier">
+                                <datalist id="kurstyp">
+                                    <option value="texto A">
+                                    <option value="texto B">
+                                </datalist>
+                                <label for="termin_modifier">Termin</label>
+                                <input list="termin" name="input_normal" id="termin_modifier">
+                                <datalist id="termin">
+                                    <option value="texto A">
+                                    <option value="texto B">
+                                </datalist>
                             </div>
                         </div>
                     </form>
@@ -54,7 +83,7 @@
                                 <div class='input-group date' id='datepicker13'>
                                         <input type='text' class="form-control"/>
                                     <span class="input-group-addon">
-		                                <span class="glyphicon glyphicon-calendar" onclick="calender()"></span>
+		                                <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                 </div>
                                 <div class='input-group date' id='datepicker24'>

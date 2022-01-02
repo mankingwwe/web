@@ -1,5 +1,5 @@
 function calender () {
-    $('#datepicker').datepicker({
+    $('#datepicker1').datepicker({
         format: "dd/mm/yyyy",
         autoclose: true,
         todayHighlight: true,
