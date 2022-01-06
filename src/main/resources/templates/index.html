@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link th:href="@{index.css}" rel="stylesheet">
+    <link th:href="@{main.css}" rel="stylesheet">
     <script th:src="@{index.js}"></script>
+    <link rel="stylesheet" href="main.css">
     <script src="index.js"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -11,13 +12,34 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body id="grid-wrapper">
-    <header>
-        <h1>MMW WARBURG</h1>
-    </header>
-    <div id="index_menubar" th:insert="marktdaten.html :: menu"> </div>
-    <div id="index_contentbar" th:insert="marktdaten.html :: contentbar"> </div>
+<body>
+<div class="body-wrapper">
+    <div class="menubar">
+        <details>
+            <summary></summary>
+            <nav class="menu">
+                <a href="http://localhost:8080/bloomberg">Bloomberg</a>
+                <a href="#link">Work</a>
+                <a href="#link">Links</a>
+                <a href="#link">Contact</a>
+                <a href="#link">Work</a>
+                <a href="#link">Links</a>
+                <a href="#link">Contact</a>
+                <a href="#link">About</a>
+            </nav>
+        </details>
+    </div>
+    <div class="contentbar">
+        <div class="input-area">
+        </div>
+        <div class="graph-area">
+        </div>
+        <div class="table-area">
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
 
 

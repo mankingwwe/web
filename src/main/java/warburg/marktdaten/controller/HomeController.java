@@ -10,14 +10,42 @@ public class HomeController {
     @GetMapping("/")
     public ModelAndView home(){
         ModelAndView mw = new ModelAndView();
-        mw.setViewName("index");
+        mw.setViewName("devisen");
         return mw;
     }
 
-    @GetMapping("/bloomberg")
-    public ModelAndView bloomberg(){
+    @GetMapping("/Devisen")
+    public ModelAndView devisen(){
         ModelAndView mw = new ModelAndView();
-        mw.setViewName("bloomberg");
+        mw.setViewName("devisen");
+        return mw;
+    }
+
+    @GetMapping("/Devisenvolas")
+    public ModelAndView devisenvolas(){
+        ModelAndView mw = new ModelAndView();
+        mw.setViewName("devisenvolas");
+        return mw;
+    }
+
+    @GetMapping("/Wertpapiere")
+    public ModelAndView wertpapiere(){
+        ModelAndView mw = new ModelAndView();
+        mw.setViewName("wertpapiere");
+        return mw;
+    }
+
+    @GetMapping("/Zinsen")
+    public ModelAndView zinsen(){
+        ModelAndView mw = new ModelAndView();
+        mw.setViewName("zinsen");
+        return mw;
+    }
+
+    @GetMapping("/Geldmarktfuture")
+    public ModelAndView geldmarktfuture(){
+        ModelAndView mw = new ModelAndView();
+        mw.setViewName("geldmarktfuture");
         return mw;
     }
 
