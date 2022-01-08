@@ -12,11 +12,11 @@
 
 .sub-items{
     display: none;
-    padding: 20px;
+    padding-top: 10px;
 }
 
 .master-item{
-    margin-left: 18px;
+    margin-left: 12px;
 }
 
 .master-item:hover .sub-items {display: block;}
@@ -92,6 +92,12 @@ nav > .menuItems {
     margin: 20px;
 }
 
+.sublink:hover{
+    font-size: 22px;
+    color: white;
+
+}
+
 li > a {
     text-decoration: none;
     color: #8f8f8f;
@@ -123,7 +129,8 @@ a::before {
 .amenu:hover{
     font-size: 29px;
     font-weight: 500;
-    color: darkblue;
+    color: white;
+
 }
 
 .amenu{
