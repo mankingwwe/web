@@ -10,6 +10,54 @@
 
 }
 
+.sub-items{
+    display: none;
+    padding: 20px;
+}
+
+.master-item{
+    margin-left: 18px;
+}
+
+.master-item:hover .sub-items {display: block;}
+
+.sub-item{
+    padding: 6px;
+}
+
+.sublink{
+    font-size: 19px;
+    color: black;
+    margin-left: 15px;
+}
+
+.accept-button{
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.accept-button > button{
+    padding: 10px;
+    background-color: #d13939;
+    font-size: 15px;
+    font-family: monospace;
+}
+
+.input-date{
+    margin-left: 40px;
+}
+
+.input-date > input{
+    padding-top: 4px;
+    border:2px solid #d13939;
+}
+
+.input-date > label{
+    font-size: 19px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
 
 
 /* Hide scrollbar for IE, Edge and Firefox */
@@ -47,7 +95,7 @@ nav > .menuItems {
 li > a {
     text-decoration: none;
     color: #8f8f8f;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 400;
     transition: all 0.5s ease-in-out;
     position: relative;
@@ -129,22 +177,6 @@ img{
     text-decoration: none;
 }
 
-.input-form {
-    display: flex;
-    padding: 20px;
-}
-
-.input-form > div {
-    width: 25%;
-    margin-left: 20px;
-}
-
-.input-form > div > label {
-    display: block;
-    margin-bottom: 20px;
-}
-
-
 
 
 .contentbar{
@@ -192,41 +224,11 @@ img{
     padding: 0.6em 1em;
 }
 
-.category-item{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.category-items{
-    background-color: #612424;;
-    border-radius: 20px;
-    display: block;
-    text-align: center;
-}
-
-.category{
-    display: block;
-    margin-top: 20px;
-}
-
-.category > a {
-    text-decoration: none;
-    font-size: 25px;
-    margin: 5px;
-    color: black;
-}
-
-.category:hover {
-    background-color: #d13939;
-}
-
 .search-input {
     border: none;
     outline: none;
     font-family: "Fira Sans", sans-serif;
 }
-
-
 
 .content-area{
     display:grid;

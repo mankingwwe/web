@@ -16,7 +16,13 @@
         <div class="menu-area">
             <nav class="menu-container">
                 <ul class="menuItems">
-                    <li><a class="amenu" href='#' data-item='Devisen'>Devisen</a></li>
+                    <div class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>Devisen</a></li>
+                        <div class="sub-items">
+                            <li class="sub-item"><a class="sublink" href='#' data-item='Devisen'>Devisen</a></li>
+                            <li class="sub-item"><a class="sublink" href='#' data-item='Devisen'>Geldmarkt</a></li>
+                        </div>
+                    </div>
                     <li><a class="amenu" href='#' data-item='Devisenvolas'>Devisenvolas</a></li>
                     <li><a class="amenu" href='#' data-item='Geldmarktfuture'>Geldmarktfuture</a></li>
                     <li><a class="amenu" href='#' data-item='Wertpapiere'>Wertpapiere</a></li>
@@ -56,69 +62,62 @@
                                 <input type="text" class="search-input" placeholder="Währung 2">
                             </th>
                             <th>
-                                <input type="text" class="search-input" placeholder="Kurstyp">
+                                <input type="text" class="search-input" placeholder="Kursfeststellung">
                             </th>
                             <th>
                                 <input type="text" class="search-input" placeholder="Termin">
                             </th>
                             <th>
-                                <input type="text" class="search-input" placeholder="Full Name">
+                                <input type="text" class="search-input" placeholder="Kurs">
                             </th>
                             <th>
-                                <input type="text" class="search-input" placeholder="Ocwcupation">
+                                <input type="text" class="search-input" placeholder="Swap">
                             </th>
                             <th>
-                                <input type="text" class="search-input" placeholder="Country">
+                                <input type="text" class="search-input" placeholder="Kurstyp">
                             </th>
                             <th>
-                                <input type="text" class="search-input" placeholder="Favorite Movie">
+                                <input type="text" class="search-input" placeholder="Valuta">
                             </th>
-
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Reamonn Corkill</td>
-                            <td>Pharmacist</td>
-                            <td>France</td>
-                            <td>Fast and the Furious, The</td>
-                            <td>Reamonn Corkill</td>
-                            <td>Pharmacist</td>
-                            <td>France</td>
-                            <td>Fast and the Furious, The</td>
+                            <td>EUR</td>
+                            <td>USD</td>
+                            <td>10.12.2013</td>
+                            <td>Spot</td>
+                            <td>1,13412</td>
+                            <td>-0,0000002</td>
+                            <td>Mittelkurs</td>
+                            <td>20.12.2013</td>
                         </tr>
                         <tr>
-                            <td>Dara Lovell</td>
-                            <td>Assistant Professor</td>
-                            <td>Russia</td>
-                            <td>Reamonn Corkill</td>
-                            <td>Pharmacist</td>
-                            <td>France</td>
-                            <td>Fast and the Furious, The</td>
-                            <td>Villa Rides!</td>
+                            <td>EUR</td>
+                            <td>USD</td>
+                            <td>13.12.2013</td>
+                            <td>1 Monat</td>
+                            <td>1,13132112</td>
+                            <td>-0,0000022</td>
+                            <td>Mittelkurs</td>
+                            <td>1.01.2014</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
             <div class="data-container">
-                <div class="category-item">
-                    <div class="category-items">
-                        <div class="category">
-                            <a href="http://localhost:8080/Devisen">Devisen</a>
-                        </div>
-                        <div class="category">
-                            <a href="http://localhost:8080/Devisenvolas">Devisenvolas</a>
-                        </div>
-                        <div class="category">
-                            <a href="http://localhost:8080/Wertpapiere">Wertpapiere</a>
-                        </div>
-                        <div class="category">
-                            <a href="http://localhost:8080/Zinsen">Zinsen</a>
-                        </div>
-                        <div class="category">
-                            <a href="http://localhost:8080/Geldmarktfuture">Geldmarktfuture</a>
-                        </div>
+                <div class="input-item">
+                    <div class="input-date">
+                        <label for="date1">Datum von </label>
+                        <input id="date1" type="text" name="date1" value="10.12.2021">
+                    </div>
+                    <div class="input-date">
+                        <label for="date2">Datum bis </label>
+                        <input id="date2" type="text" name="date2" value="12.12.2021">
+                    </div>
+                    <div class="accept-button">
+                        <button type="button" name="button">Aktualisieren</button>
                     </div>
                 </div>
                 <div class="graph-item">
