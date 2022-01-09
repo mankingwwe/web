@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <head>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -134,10 +135,36 @@
                     </div>
                 </div>
                 <div class="graph-item">
+                    <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    var xValues = ["1.01.2021","2.01.2021","3.01.2021","4.01.2021","5.01.2021","6.01.2021"];
+    var yValues = [2,4,5,5,2,1];
+
+    new Chart("myChart", {
+        type: "line",
+        data: {
+            labels: xValues,
+            datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgb(131,14,14)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            scales: {
+                yAxes: [{ticks: {min: 1, max:8}}],
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
