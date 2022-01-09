@@ -19,7 +19,13 @@
     margin-left: 12px;
 }
 
-.master-item:hover .sub-items {display: block;}
+#master-marktdaten:hover #sub-marktdaten {display: block;   transition-duration: 2s;
+
+}
+#master-morningstar:hover #sub-morningstar {display: block;}
+#master-wp:hover #sub-wp {display: block;}
+#master-bloomber:hover #sub-bloomberg {display: block;}
+
 
 .sub-item{
     padding: 6px;
@@ -108,18 +114,6 @@ li > a {
     text-transform: uppercase;
 }
 
-a::before {
-    content: attr(data-item);
-    transition: 0.5s;
-    color: #8254ff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    overflow: hidden;
-}
 #wblogo{
     margin-left: 2px;
     height: 90px;
@@ -136,7 +130,6 @@ a::before {
 .amenu{
     color: black;
 }
-
 
 
 .body-wrapper{

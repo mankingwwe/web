@@ -16,38 +16,49 @@
         <div class="menu-area">
             <nav class="menu-container">
                 <ul class="menuItems">
-                    <div class="master-item">
+                    <div id="master-marktdaten" class="master-item">
                         <li><a class="amenu" href='#' data-item='Devisen'>Devisen</a></li>
-                        <div class="sub-items">
-                            <li class="sub-item"><a class="sublink" href='#' data-item='Devisen'>Devisenvolas</a></li>
+                        <div id="sub-marktdaten" class="sub-items">
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisenvolas' data-item='Devisen'>Devisenvolas</a></li>
                             <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisen' data-item='Devisen'>Devisen</a></li>
-                            <li class="sub-item"><a class="sublink" href='#' data-item='Devisen'>Geldmarktfuture</a></li>
-                            <li class="sub-item"><a class="sublink" href='#' data-item='Devisen'>Zinsen</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Geldmarktfuture' data-item='Devisen'>Geldmarktfuture</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Zinsen' data-item='Devisen'>Zinsen</a></li>
                         </div>
                     </div>
-                    <li><a class="amenu" href='#' data-item='Devisenvolas'>Devisenvolas</a></li>
-                    <li><a class="amenu" href='http://localhost:8080/Geldmarktfuture' data-item='Geldmarktfuture'>Geldmarktfuture</a></li>
-                    <li><a class="amenu" href='#' data-item='Wertpapiere'>Wertpapiere</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Zinsen</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Bloomberg</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
-                    <li><a class="amenu" href='#' data-item='Home'>Home</a></li>
+                    <div id="master-morningstar" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>Morningstar</a></li>
+                        <div id="sub-morningstar" class="sub-items">
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisenvolas' data-item='Devisen'>Kursanforderung</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisen' data-item='Devisen'>Börsenparameter</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Geldmarktfuture' data-item='Devisen'>Festlegen Börse</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Zinsen' data-item='Devisen'>Anzeige Schnittstelle</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Zinsen' data-item='Devisen'>Morningstar Daten</a></li>
+                        </div>
+                    </div>
+                    <div id="master-bloomber" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>Bloomberg</a></li>
+                        <div id="sub-bloomberg" class="sub-items">
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisenvolas' data-item='Devisen'>Oneshoot senden</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisen' data-item='Devisen'>Requestdaten ändern</a></li>
+                        </div>
+                    </div>
+                    <div id="master-qc" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>Quality Check</a></li>
+                    </div>
+                    <div id="master-wp" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>WP - Context</a></li>
+                        <div id="sub-wp" class="sub-items">
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisenvolas' data-item='Devisen'>Ausnahme Kurssysteme</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisen' data-item='Devisen'>Übersicht Kurssysteme</a></li>
+                            <li class="sub-item"><a class="sublink" href='http://localhost:8080/Devisen' data-item='Devisen'>Kurserfassung</a></li>
+                        </div>
+                    </div>
+                    <div id="master-ubs" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>UBS Vol Cast</a></li>
+                    </div>
+                    <div id="master-downloads" class="master-item">
+                        <li><a class="amenu" href='#' data-item='Devisen'>Downloads</a></li>
+                    </div>
                 </ul>
             </nav>
         </div>
